@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Space Form</title>
+      <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="survey">
+      <div class="title">
+        <h1 id="title">Intergalactic Tourism Survey</h1>
+        <p id="description">Please fill in the survey carefully.</p>
+      </div>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Enter Your Name: <input placeholder="name" required id="name" type="text" /></label>
+          <label id="email-label" for="email">Enter Your Email: <input placeholder="email" required id="email" type="email" /></label>
+          <label id="number-label" for="name">Enter Your Number: <input placeholder="number"  id="number" type="number" min="3" max="8"/></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Which space travel package would you like to purchase?
+            <select id="dropdown">
+              <option>Please Select</option>
+              <option>Lunar Landing Experience</option>
+              <option>Intergalactic Cruise</option>
+              <option>Spacewalk Adventure</option>
+              <option>Stargazing</option>
+            </select>
+          </label>
+          <p>What type of accommodation would you prefer during your travel experience?</p>
+          <div class="radio">
+            <label for="solar-system"><input class="inline" value="solar" id="solar-system" type="radio" name="accommodation" /> Solar System Luxury Villas</label>
+            <label for="zero-gravity"><input class="inline" value="zero" id="zero-gravity" type="radio" name="accommodation" /> Zero Gravity Pods</label>
+            <label for="spaceship-cabin"><input class="inline" value="spaceship" id="spaceship-cabin" type="radio" name="accommodation" /> Spaceship Cabin</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p>How would you like to travel?</p>
+          <div class="checks">
+            <label for="teleportation">
+              <input class="inline" id="teleportation" type="checkbox" name="teleportation" value="teleportation"  /> Teleportation
+            </label>
+            <label for="spaceship">
+              <input class="inline" id="spaceship" type="checkbox" name="spaceship" value="spaceship"  /> Spaceship
+            </label>
+            <label for="rocket">
+              <input class="inline" id="rocket" type="checkbox" name="rocket" value="rocket"  /> Rocket
+            </label>
+          </div>
+          <label for="bio">Do you have any questions about our space travel services?
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Type your questions here..."></textarea>
+          </label>      
+        </fieldset>   
+        <input id="submit" type="submit"value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
